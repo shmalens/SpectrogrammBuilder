@@ -1,0 +1,123 @@
+\documentclass[12pt, a4paper]{article}
+\usepackage[T2A]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[russian]{babel}
+\usepackage{graphicx}
+\usepackage{geometry}
+\usepackage{textpos}
+\usepackage{textpos}
+\usepackage{array}
+\usepackage{caption}
+\usepackage{amsmath}
+\usepackage{fancyhdr}
+
+\geometry{
+	a4paper,
+	textwidth=170mm,
+	textheight=250mm,
+	left=20mm,
+	top=20mm,
+}
+
+\newcommand{\Faculty}{Робототехника и комплексная автоматизация}
+\newcommand{\Department}{Системы автоматизированного проектирования (САПР)}
+
+\newcommand{\TitleText}{@Название работы часть 1@}
+\newcommand{\Title}{{\Huge \textbf{\TitleText}}}
+
+\newcommand{\SubTitleText}{@Название работы часть 2 (опционально)@}
+\newcommand{\SubTitle}{{\LARGE \textbf{\SubTitleText}}}
+
+\newcommand{\FullName}{Дунайцев Александр Иванович}
+\newcommand{\Author}{Дунайцев А. И}
+\newcommand{\EduGroup}{РК6-54Б}
+\newcommand{\TaskType}{@Тип документа@}
+\newcommand{\WorkTheme}{@Тема работы@}
+
+% Пример как добавить картину в документ
+%\begin{figure}[h]
+%	\centering    % Центрируем
+%	\includegraphics[width=0.25\textwidth]{pic.png}
+%	\caption{a nice plot} % Подписть к картинке, будет снизу
+%	\label{fig:pic1} % Можно указывать ссылку на эту картинку в тексте, как \ref{fig:pic1}
+%\end{figure}
+
+\setlength{\columnsep}{1in}
+
+
+\begin{document}
+	% Место для верстки титульного документа
+	\thispagestyle{empty}
+	\begin{tabular}{m{0.15\linewidth}m{0.85\linewidth}}
+	\centering
+	\includegraphics[scale=0.07]{static/bmstu.pdf} &
+	{\centering
+	Министерство науки и высшего образования Российской Федерации
+	Федеральное государственное бюджетное образовательное учреждение
+	высшего образования
+	
+	«Московский государственный технический университет
+	имени Н.Э. Баумана
+	(национальный исследовательский университет)»
+	
+	(МГТУ им. Н.Э. Баумана)
+	
+    } \\
+	\hline
+	\multicolumn{1}{p{0.15\textwidth}}{} & \multicolumn{1}{p{0.85\textwidth}}{} \\
+	\multicolumn{1}{p{0.15\textwidth}}{ФАКУЛЬТЕТ}	&	\multicolumn{1}{p{0.85\textwidth}}{\Faculty}	\\
+	\multicolumn{1}{p{0.15\textwidth}}{КАФЕДРА}	&	\multicolumn{1}{p{0.85\textwidth}}{\Department}	\\
+	\end{tabular}
+\vfil
+
+\begin{center}
+	\Title
+	
+	\SubTitle
+\end{center}
+
+
+\vfil
+\begin{center}
+	\begin{tabular}{p{0.4\textwidth}p{0.4\textwidth}} 
+		Студент:	& \FullName \\ 
+		\hline
+		Группа:	& \EduGroup \\ 
+		\hline
+		Тип задания:	& \TaskType \\ 
+		\hline
+		Тема:	& \WorkTheme \\ 
+		\hline
+	\end{tabular}
+\end{center}
+
+\vfil
+
+\begin{tabular}{p{0.45\textwidth}p{0.25\textwidth}p{0.25\textwidth}} 
+	\large
+	Студент	&	$\underset{\text{подпись, дата}}{\underline{\hspace{0.2\textwidth}}}$ & \underline{\Author}  \\ 
+	& & \\
+	Преподаватель	&	$\underset{\text{подпись, дата}}{\underline{\hspace{0.2\textwidth}}}$ & $\underset{\text{Фамилия, И. О.}}{\underline{\hspace{0.2\textwidth}}}$ \\ 
+\end{tabular}
+
+\vfil
+\vfil
+\begin{center}
+	Москва, 2021
+\end{center}
+
+%Конец титульного листа
+\newpage	
+	% Страница с версткой содержания
+	\tableofcontents
+	\newpage
+	
+	% Далее идут секции с текстом документа
+	\section{Секция 1}
+	\subsection{Подсекция 1.1}
+	\subsection{Подсекция 1.2}
+	
+	\section{Секция 2}
+	\subsection{Подсекция 2.1}
+	\subsection{Подсекция 2.2}
+\end{document}
